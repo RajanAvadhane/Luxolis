@@ -5,9 +5,9 @@ import Background from "./assets/components/Background"
 function App() {
   return (
     <>
-      <div className="relative  w-full h-screen  bg-blue-700">
+      <div className=" flex justify-center items-center w-full h-screen  bg-blue-700 ">
         <Background />
-        <div className=" fixed z-[3] flex items-center  ">
+        <div className=" fixed">
           <Contact />
         </div>
       </div>

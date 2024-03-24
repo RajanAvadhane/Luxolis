@@ -27,14 +27,14 @@ function Contact() {
   }
 
   return (
-    <div className=" bg-blue-700 relative top-1/2 left-1/2 translate-x-[100%] translate-y-[40%] h-96 w-96 ">
+    <div className=" flex justify-center items-center h-screen ">
       <form onSubmit={handleSubmit(onSubmit)} className=" p-8 rounded-L w-96 ">
         <div className="flex justify-center items-center  ">
           <PiShoppingCartLight size={150} color="white" />
         </div>
 
         <div className="mb-4 ">
-          <div className="relative  ">
+          <div className="relative">
             <span className=" absolute inset-y-0 left-0 pl-3 flex items-center">
               <FiUser className="h-5 w-5 text-white" />
             </span>
@@ -47,10 +47,9 @@ function Contact() {
             />
           </div>
         </div>
-
         <div className="mb-2 ">
           <div className="relative ">
-            <span className="absolute inset-y-0 left-0 pl-3 flex items-center">
+            <span className="absolute pt-2 left-0 pl-3 flex items-center">
               <FiLock className="h-5 w-5 text-white" />
             </span>
             <input
@@ -77,14 +76,14 @@ function Contact() {
         <div>
           <button
             type="submit"
-            className=" bg-slate-100 text-blue-600 w-full px-4 py-2 rounded-md focus:outline-none mt-6  font-semibold shadow  "
+            className=" bg-slate-100 text-blue-600 hover:text-white hover:bg-blue-600 w-full px-4 py-2 rounded-md focus:outline-none mt-6  font-semibold shadow  "
           >
             LOGIN
           </button>
 
           <a
             href="#"
-            className="flex justify-end text-slate-100 hover:text-blue-500 "
+            className="flex justify-end text-slate-100 hover:text-black "
           >
             Forgot password?
           </a>
